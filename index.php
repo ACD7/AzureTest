@@ -23,7 +23,7 @@
             setcookie('username', $username);
             setcookie('access_level', 'admin');
         }
-        else if($username != "" && $password != ""){
+        else if($username == "" && $password == ""){
         echo "Please Log In";
         }
         else{
