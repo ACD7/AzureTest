@@ -3,10 +3,13 @@
     <head>
      </head>
      <body>
-      <p>
-          <?php
-           echo "Hello World!";
-          ?>
-      </p>
+        <action="display.php" method="post">
+        <label>Username:</label>
+        <input type="text" name="username">
+        <br>
+        <label>Password:</label>
+        <input type="password" name="password">
+        <br>
+        <input type="submit" name="submit">
      </body>
 </html>
