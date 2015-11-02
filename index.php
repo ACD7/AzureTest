@@ -3,7 +3,7 @@
     <head>
      </head>
      <body>
-        <action="display.php" method="post">
+        <form action="display.php" method="post">
         <label>Username:</label>
         <input type="text" name="username">
         <br>
@@ -11,5 +11,6 @@
         <input type="password" name="password">
         <br>
         <input type="submit" name="submit">
+        </form>
      </body>
 </html>
