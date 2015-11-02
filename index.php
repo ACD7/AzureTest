@@ -3,13 +3,12 @@
     <head>
      </head>
      <body>
-      <p>
-          <?php
+        <?php
           $username = $_POST['Jim'];
           print ($username);
           $password = $_POST['jimfeeley1'];
           print ($password);
-          ?>
-      </p>
+        ?>
+
      </body>
 </html>
