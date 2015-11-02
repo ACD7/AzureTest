@@ -20,9 +20,9 @@ displayAccessLevelInformation($_COOKIE["access_level"]);
 
 function displayAccessLevelInformation($accessLevel)
 {
-    if ($access_level == "standarduser") {
+    if ($accessLevel == "standarduser") {
         echo "<p>You are currently logged in as a standard user</p>";
-    } elseif ($access_level == "root") {
+    } elseif ($accessLevel == "root") {
         echo "<p>You are currently logged in as a root user</p>";
         echo "<p>You now have access to additional administrative features</p>";
     }
