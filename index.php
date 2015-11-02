@@ -5,7 +5,10 @@
      <body>
       <p>
           <?php
-           echo "Hello World!";
+          $username = $_POST['Jim'];
+          print ($username);
+          $password = $_POST['jimfeeley1'];
+          print ($password);
           ?>
       </p>
      </body>
