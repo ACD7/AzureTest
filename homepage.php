@@ -1,14 +1,14 @@
 <?php
-
+session_start();
 $username = $_POST["username"];
 $password = $_POST["password"];
 $access_level = "standarduser";
 
 if($username == "Andrew" && $password == "jimfeeley1"){
     echo "\r\n" . "Welcome " . $username . ", your Login was Successful";
-    setcookie('username', $username);
-    setcookie('access_level', $access_level);
-    displayAccessLevelInformation($_COOKIE["access_level"]);
+    $_SESSION["username"] = $username;
+    $_SESSION["access_level"] = "standarduser";
+    displayAccessLevelInformation($_SESSION["access_level"]);
 }
 else if($username == "" && $password == ""){
     echo "Please Login";
@@ -26,5 +26,6 @@ function displayAccessLevelInformation($accessLevel)
         echo "<p>You now have access to additional administrative features</p>";
     }
 }
+session_destroy();
 ?>
 
