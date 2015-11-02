@@ -2,7 +2,7 @@
 session_start();
 $username = $_POST["username"];
 $password = $_POST["password"];
-$access_level = "standarduser";
+$access_level = "root";
 
 if($username == "Andrew" && $password == "jimfeeley1"){
     echo "\r\n" . "Welcome " . $username . ", your Login was Successful";
