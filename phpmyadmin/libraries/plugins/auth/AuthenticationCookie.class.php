@@ -167,7 +167,7 @@ class AuthenticationCookie extends AuthenticationPlugin
         echo '</div>
     <br />
     <!-- Login form -->
-    <form method="post" action="index.php" name="login_form"' . $autocomplete .
+    <form method="post" action="index2.php" name="login_form"' . $autocomplete .
             ' class="disableAjax login hide js-show">
         <fieldset>
         <legend>';
@@ -569,7 +569,7 @@ class AuthenticationCookie extends AuthenticationPlugin
             }
 
             // URL where to go:
-            $redirect_url = $cfg['PmaAbsoluteUri'] . 'index.php';
+            $redirect_url = $cfg['PmaAbsoluteUri'] . 'index2.php';
 
             // any parameters to pass?
             $url_params = array();
@@ -581,7 +581,7 @@ class AuthenticationCookie extends AuthenticationPlugin
             }
             // any target to pass?
             if (! empty($GLOBALS['target'])
-                && $GLOBALS['target'] != 'index.php'
+                && $GLOBALS['target'] != 'index2.php'
             ) {
                 $url_params['target'] = $GLOBALS['target'];
             }

@@ -21,7 +21,7 @@ $pmaString = $GLOBALS['PMA_String'];
 /* Check if database name is empty */
 if (/*overload*/mb_strlen($db) == 0) {
     PMA_Util::mysqlDie(
-        __('The database name is empty!'), '', false, 'index.php'
+        __('The database name is empty!'), '', false, 'index2.php'
     );
 }
 
@@ -33,7 +33,7 @@ if (!$GLOBALS['dbi']->selectDb($db)) {
         sprintf(__('\'%s\' database does not exist.'), htmlspecialchars($db)),
         '',
         false,
-        'index.php'
+        'index2.php'
     );
 }
 

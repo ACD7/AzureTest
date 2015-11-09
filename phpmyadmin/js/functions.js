@@ -378,7 +378,7 @@ function PMA_current_version(data)
 }
 
 /**
- * Loads Git revision data from ajax for index.php
+ * Loads Git revision data from ajax for index2.php
  */
 function PMA_display_git_revision()
 {
@@ -2962,7 +2962,7 @@ AJAX.registerTeardown('functions.js', function () {
     $(document).off('click', '#change_password_anchor.ajax');
 });
 /**
- * Attach Ajax event handlers for 'Change Password' on index.php
+ * Attach Ajax event handlers for 'Change Password' on index2.php
  */
 AJAX.registerOnload('functions.js', function () {
 
@@ -4764,7 +4764,7 @@ AJAX.registerOnload('functions.js', function(){
     /*
      * Display warning regarding SSL when sha256_password
      * method is selected
-     * Used in user_password.php (Change Password link on index.php)
+     * Used in user_password.php (Change Password link on index2.php)
      */
     $(document).on("change", 'select#select_authentication_plugin_cp', function() {
         if (this.value === 'sha256_password') {

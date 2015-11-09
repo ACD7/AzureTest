@@ -112,7 +112,7 @@ class PMA_NavigationHeader
         if (preg_match('/^[a-z]+:/i', $logoLink)
             && ! preg_match('/^https?:/i', $logoLink)
         ) {
-            $logoLink = 'index.php';
+            $logoLink = 'index2.php';
         }
         switch ($GLOBALS['cfg']['NavigationLogoLinkWindow']) {
         case 'new':
@@ -157,7 +157,7 @@ class PMA_NavigationHeader
         $retval  = '<!-- LINKS START -->';
         $retval .= '<div id="navipanellinks">';
         $retval .= PMA_Util::getNavigationLink(
-            'index.php' . PMA_URL_getCommon(),
+            'index2.php' . PMA_URL_getCommon(),
             $showText,
             __('Home'),
             $showIcon,
@@ -167,7 +167,7 @@ class PMA_NavigationHeader
         if ($GLOBALS['server'] != 0) {
             // Logout for advanced authentication
             if ($GLOBALS['cfg']['Server']['auth_type'] != 'config') {
-                $link  = 'index.php' . $GLOBALS['url_query'];
+                $link  = 'index2.php' . $GLOBALS['url_query'];
                 $link .= '&amp;old_usr=' . urlencode($GLOBALS['PHP_AUTH_USER']);
                 $retval .= PMA_Util::getNavigationLink(
                     $link,

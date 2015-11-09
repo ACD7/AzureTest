@@ -3389,7 +3389,7 @@ class PMA_Util
             // Values for $cfg['DefaultTabServer']
             switch ($target) {
             case 'welcome':
-                return 'index.php';
+                return 'index2.php';
             case 'databases':
                 return 'server_databases.php';
             case 'status':
