@@ -15,7 +15,7 @@
  *     ESRI ArcGIS Server 9.3 (and up?) Mapping Services using the REST API.
  *     Create a new ArcGIS93Rest layer with the <OpenLayers.Layer.ArcGIS93Rest>
  *     constructor.  More detail on the REST API is available at
- *     http://sampleserver1.arcgisonline.com/ArcGIS/SDK/REST/login.html ;
+ *     http://sampleserver1.arcgisonline.com/ArcGIS/SDK/REST/index.html ;
  *     specifically, the URL provided to this layer should be an export service
  *     URL: http://sampleserver1.arcgisonline.com/ArcGIS/SDK/REST/export.html 
  * 

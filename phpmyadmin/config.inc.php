@@ -28,7 +28,7 @@ $i++;
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
 /* Server parameters */
-$cfg['Servers'][$i]['host'] = 'eu-cdbr-azure-west-c.cloudapp.net';
+$cfg['Servers'][$i]['host'] = 'br-cdbr-azure-south-a.cloudapp.net';
 $cfg['Servers'][$i]['connect_type'] = 'tcp';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
